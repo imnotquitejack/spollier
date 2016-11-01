@@ -1,9 +1,13 @@
 .slide-title,
 .slide-title .light h1 {
   /*color: #a9c0b7;*/
-  color: #d2c6a6;
+  color: #324C66;
 }
 .banner-text.light {
-  border-top: medium double #a9c0b7;
-  border-bottom: medium double #a9c0b7;
+  border-top: medium double #E2B1A7;
+  border-bottom: medium double #E2B1A7;
+}
+
+#invited {
+  margin-top: 100px;
 }
