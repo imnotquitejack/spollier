@@ -1,0 +1,9 @@
+.slide-title,
+.slide-title .light h1 {
+  /*color: #a9c0b7;*/
+  color: #d2c6a6;
+}
+.banner-text.light {
+  border-top: medium double #a9c0b7;
+  border-bottom: medium double #a9c0b7;
+}
