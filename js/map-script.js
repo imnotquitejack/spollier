@@ -14,17 +14,16 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 13,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-    		center: new google.maps.LatLng(42.345478, -71.015844),
-			panControl: true,
+    		zoom: 14,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+    		center: new google.maps.LatLng(42.359123, -71.0564309),
+				panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
   			//scaleControl: false,
   			streetViewControl: true,
   			overviewMapControl: true,
-			//rotateControl:true,
-
+				//rotateControl:true,
   		};
 
 		//CREATE NEW MAP
@@ -53,16 +52,16 @@
 
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
-		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(42.326781, -70.987174),
-       		draggable: false,
-       		raiseOnDrag: false,
-       		icon: ' ',
-       		map: map,
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-       		labelAnchor: new google.maps.Point(29, 20),
-       		labelClass: "labels" // the CSS class for the label
-     		});
+		// var marker1 = new MarkerWithLabel({
+    //    		position: new google.maps.LatLng(42.326781, -70.987174),
+    //    		draggable: false,
+    //    		raiseOnDrag: false,
+    //    		icon: ' ',
+    //    		map: map,
+    //      	labelContent: '<div class="de-icon circle small-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
+    //    		labelAnchor: new google.maps.Point(29, 20),
+    //    		labelClass: "labels" // the CSS class for the label
+    //  		});
 
 		var marker2 = new MarkerWithLabel({
        		position: new google.maps.LatLng(42.359123, -71.0564309),
@@ -70,8 +69,8 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div class="de-icon circle small-size" style="background-color:#FFF; border:1px solid #4d39f0"><i class="de-icon-glass" style="color: #467496;"></i></div>',
-       		labelAnchor: new google.maps.Point(0, 0),
+         	labelContent: '<div class="de-icon circle small-size" style="background-color:#FFF; border:1px solid #497695"><i class="de-icon-glass" style="color: #467496;"></i></div>',
+       		labelAnchor: new google.maps.Point(20, 30),
        		labelClass: "labels" // the CSS class for the label
      		});
 
@@ -139,12 +138,12 @@
       	'</div>';
 
 		var contentString2 = '<div>'+
-		'RECEPTION';
+		'THE RECEPTION!';
       	'</div>';
 
- 	 	var infowindow1 = new google.maps.InfoWindow({
-      		content: contentString1
-  		});
+		//  	var infowindow1 = new google.maps.InfoWindow({
+    //   		content: contentString1
+  	// 	});
 
 		var infowindow2 = new google.maps.InfoWindow({
       		content: contentString2
@@ -154,15 +153,15 @@
 
 		//OPEN INFO WINDOWS ON LOAD
 		//=======================================================================================
-  		infowindow1.open(map,marker1);
+  		// infowindow1.open(map,marker1);
   		infowindow2.open(map,marker2);
 
 
 		//ON CLICK MARKER, OPEN INFO WINDOWS
 		//=======================================================================================
-		google.maps.event.addListener(marker1, 'click', function() {
-  			infowindow1.open(map,marker1);
-  		});
+		// google.maps.event.addListener(marker1, 'click', function() {
+  	// 		infowindow1.open(map,marker1);
+  	// 	});
 		google.maps.event.addListener(marker2, 'click', function() {
   			infowindow2.open(map,marker2);
   		});
