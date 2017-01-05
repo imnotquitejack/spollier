@@ -193,7 +193,7 @@
 			{
 				//map.setCenter(marker.getPosition());
 				window.setTimeout(function() {
-      				map.panTo(marker1.getPosition());
+      				map.panTo(marker2.getPosition());
     			}, 500);
 			}
 			is_windowresize=false;
