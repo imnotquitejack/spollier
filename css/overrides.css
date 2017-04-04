@@ -26,3 +26,8 @@ section#our-story {
 #map-canvas {
   height: 630px;
 }
+
+a.hotel-link {
+  color: #F0394D;
+  font-weight: bold;
+}
